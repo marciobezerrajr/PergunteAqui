@@ -12,8 +12,9 @@ const Answer = connection.define('answers', {
     }
 })
 
-// Answer.sync({force: false}).then(()=> {
-//     console.log('<<<<<<<< -------------- Tabela Answer Criada ----------- >>>>>>>>')
-// })
+            // função que cria as tabelas
+Answer.sync().then(()=> {
+    console.log('<<<<<<<< -------------- Tabela Answer Criada ----------- >>>>>>>>')
+})
 
 module.exports = Answer

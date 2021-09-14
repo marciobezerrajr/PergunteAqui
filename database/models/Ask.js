@@ -12,8 +12,9 @@ const Ask = connection.define('ask', {
     }
 })
 
-// Ask.sync({force: true}).then(()=> {
-//      console.log('<<<<<<<< -------------- Tabela Ask Criada ----------- >>>>>>>>')
-// })
+            // função que cria as tabelas
+Ask.sync().then(()=> {
+     console.log('<<<<<<<< -------------- Tabela Ask Criada ----------- >>>>>>>>')
+})
 
 module.exports = Ask

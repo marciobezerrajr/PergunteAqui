@@ -88,7 +88,4 @@ app.post('/answer', (req, res) => {
 })
 
 
-
-
-
 app.listen(porta, () => { console.log(`server on em localhost:${porta}`) })
