@@ -1,0 +1,24 @@
+<%- include ('partials/header.ejs'); %>
+<body>
+<%- include ('partials/navbar.ejs'); %>
+
+    <div class="container">
+        <div class="card" id="form-ask">
+            <div class="card-header">
+                <h3>Realizar perguntas</h3>
+            </div>
+
+            <div class="card-body">
+                <form method="POST" action="/asking">
+                    <label for="">Título</label>
+                    <!-- os names no front são para conseguir acessar no backend, exemplo: req.body.titulo ou req.body.descricao  -->
+                    <input type="text" placeholder="Título" class="form-control" name="title"><br>
+                    <label for="">Descrição:</label>
+                    <textarea placeholder="Descreva sua pergunta aqui" class="form-control" name="description"></textarea><br>
+                    <button class="btn btn-primary">Perguntar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<%- include ('partials/footer.ejs'); %>
