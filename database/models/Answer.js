@@ -13,6 +13,7 @@ const Answer = connection.define('answers', {
 })
 
             // função que cria as tabelas
+// Answer.sync({ force: true }).then(()=> {
 Answer.sync().then(()=> {
     console.log('<<<<<<<< -------------- Tabela Answer Criada ----------- >>>>>>>>')
 })

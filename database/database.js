@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 
 //configurações e credenciais de conexão
-const connection = new Sequelize('pergunteaqui', 'teste', '1234567890abcde', {
+const connection = new Sequelize('pergunteaqui', 'root', '123456', {
     host:'localhost',
     dialect: 'mysql'
 })

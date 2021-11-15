@@ -13,6 +13,7 @@ const Ask = connection.define('ask', {
 })
 
             // função que cria as tabelas
+// Ask.sync({ force: true }).then(()=> {
 Ask.sync().then(()=> {
      console.log('<<<<<<<< -------------- Tabela Ask Criada ----------- >>>>>>>>')
 })

@@ -40,7 +40,8 @@ app.get('/ask/:id', (req, res) => {
         .then((ask) => {
             if (ask) {
                 Answer.findAll({
-                    where: { askID: id },order: [['id', 'DESC']]})
+                    where: { askID: id }, order: [['id', 'DESC']]
+                })
                     .then((answers) => {
                         res.render('askPage', {
                             ask, answers

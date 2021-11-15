@@ -10,10 +10,10 @@
 
             <div class="card-body">
                 <form method="POST" action="/asking">
-                    <label for="">Título</label>
+                    <label for="">Assunto: </label>
                     <!-- os names no front são para conseguir acessar no backend, exemplo: req.body.titulo ou req.body.descricao  -->
-                    <input type="text" placeholder="Título" class="form-control" name="title"><br>
-                    <label for="">Descrição:</label>
+                    <input type="text" placeholder="Assunto / Título referente a sua pergunta" class="form-control" name="title"><br>
+                    <label for="">Descrição: </label>
                     <textarea placeholder="Descreva sua pergunta aqui" class="form-control" name="description"></textarea><br>
                     <button class="btn btn-primary">Perguntar</button>
                 </form>
