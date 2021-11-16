@@ -14,7 +14,7 @@
                     <h3>Responda:</h3><br>
                     <textarea class="form-control" placeholder="Digite sua resposta" name="bodyText"></textarea><br>
                     <input type="hidden" value="<%= ask.id %>" name="askID" />
-                    <button type="submit" class="btn btn-primary">Responder</button>
+                    <button type="submit" class="btn btn-success">Responder</button>
                 </form>
 
                 <hr>
@@ -27,7 +27,7 @@
                         <div class="card-body">
                             <h6><%= answer.body %></h6>
                         </div>
-                    </div>
+                    </div><br>
                     
                 <% }) %>
             </div>
